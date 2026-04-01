@@ -21,33 +21,18 @@
 Ce projet a été réalisé dans le cadre de mon **Stage PFE** chez **IWACO**. L'objectif principal est de concevoir une interface utilisateur (UI) moderne, performante et entièrement responsive en utilisant les dernières technologies Web.
 
 ### ✨ Fonctionnalités clés :
-* **Navbar dynamique :** Navigation fluide avec effets de survol (hover) personnalisés.
-* **Design Responsive :** Adaptation parfaite sur tous les écrans (Desktop, Tablette, Mobile).
-* **Architecture Scalable :** Utilisation de composants React réutilisables.
-* **Stylisation avancée :** Organisation des styles avec SCSS (Variables, Mixins, Nesting).
+* **Frontend Réactif :** Interface fluide développée avec React & Bootstrap 5.
+* **API RESTful :** Backend robuste avec Laravel pour la gestion des données.
 
 ---
 
-## 📸 Aperçu (Screenshots)
-
-### 🖥️ Navigation Header
-<p align="center">
-  <img src="./screenshots/navbar.jpg" width="100%" alt="Navbar Preview" />
-</p>
-
-### 📱 Footer Professionnel
-<p align="center">
-  <img src="./screenshots/footer.jpg" width="100%" alt="Footer Preview" />
-</p>
-
+## 🏗️ Architecture Technique
+- **Frontend :** React.js, SCSS, Bootstrap 5, Vite.
+- **Backend :** Laravel 10+, PHP 8.1+, REST API.
+- **Base de données :** MySQL.
 ---
 
-## 🛠️ Stack Technique
-* **Framework :** [React.js](https://reactjs.org/)
-* **Build Tool :** [Vite](https://vitejs.dev/)
-* **Styling :** [SCSS](https://sass-lang.com/) & [Bootstrap 5](https://getbootstrap.com/)
-* **Icônes :** [FontAwesome](https://fontawesome.com/)
-
+<!-- ## 📸 Aperçu (Screenshots) -->
 ---
 
 ## 🚀 Installation et Lancement
@@ -56,12 +41,12 @@ Pour cloner et lancer ce projet localement, suivez ces étapes :
 
 1.  **Cloner le dépôt :**
     ```bash
-    git clone [https://github.com/votre-username/iwaco-pfe.git](https://github.com/votre-username/iwaco-pfe.git)
+    git clone [https://github.com/abderrahim1210/iwaco.git](https://github.com/abderrahim1210/iwaco.git)
     ```
 
 2.  **Installer les dépendances :**
     ```bash
-    cd iwaco-pfe
+    cd iwaco
     npm install
     ```
 
