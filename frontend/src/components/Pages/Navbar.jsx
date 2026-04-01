@@ -32,9 +32,6 @@ const Navbar = () => {
                             </li>
                         </ul>
                         <ul className='navbar-nav d-none d-md-flex flex-column ms-auto'>
-                            <div className='text-center' style={{color:"#555"}}>
-                                <small>Suivez-nous</small>
-                            </div>
                             <div className='d-flex'>
                                 <li className="nav-item">
                                     <a href='https://www.facebook.com/share/1BCabGnttm/' className='nav-link social-icon facebook'>
