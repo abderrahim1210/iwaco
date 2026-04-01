@@ -1,7 +1,7 @@
 # 🚀 IWACO - Modern Web Interface (Stage PFE)
 
 <p align="center">
-  <img src="./src/assets/logo.png" alt="IWACO Logo" width="200"/>
+  <img src="./frontend/public/outils/pngs/logo.png" alt="IWACO Logo" width="200"/>
 </p>
 
 <p align="center">
@@ -73,9 +73,9 @@ Pour cloner et lancer ce projet localement, suivez ces étapes :
 ---
 
 ## 👨‍💻 Développeur
-* **Nom :** [Ton Nom]
+* **Nom :** Abderrahim
 * **Rôle :** Stagiaire Développeur Front-end
 * **Entreprise :** IWACO
 
 ---
-<p align="center">Made with ❤️ for IWACO PFE</p>
+<p align="center">Projet IWACO PFE</p>
