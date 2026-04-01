@@ -1,0 +1,114 @@
+[data-bs-page="navbar"]{
+    .nav1{
+        font-weight: bold;
+        background-color: rgba(255,255,255,0.7);
+        backdrop-filter: blur(20px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .nav1 a{
+        position: relative;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+
+    .ul1{
+        display: flex;
+        align-items: center;
+    }
+
+    .ul2, .nav-link{
+        gap: 6px;
+    }
+
+    .nav-link{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-link.active{
+        color: var(--principal_color);
+    }
+
+    .ul2 .nav-item{
+        text-transform: capitalize;
+    }
+
+    .ul2 .nav-item .nav-link{
+        position: relative;
+    }
+
+    .ul2 .nav-item .nav-link::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+        width: 0;
+        height: 4px;
+        background: var(--principal_color);
+        transition: 0.3s;
+    }
+
+    .ul2 .nav-item .nav-link:hover::after, .ul2 .nav-item .nav-link.active::after{
+        width: 100%;
+    }
+
+    .ul2 .nav-item .nav-link:hover{
+        color: var(--principal_color);
+    }
+
+    .ul2 .nav-item .nav-link:focus{
+        color: var(--principal_color);
+    }
+
+    header{
+        background-color: #fff;
+    }
+
+    .social-icon{
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: #555;
+        color: #555;
+        transition: 0.3s;
+    }
+
+    .social-icon:hover{
+        // background-color: var(--principal_color);
+        color: white;
+        transform: scale(1.1);
+    }
+
+    .social-icon.facebook:hover{
+        background-color: #1877f2;
+    }
+
+    .social-icon.twitter:hover{
+        background-color: #1da1f2;
+    }
+
+    .social-icon.linkedin:hover{
+        background-color: #0077b5;
+    }
+
+    .nav-link svg{
+        font-size: 10px;
+        transition: 0.3s;
+    }
+
+    .nav-link:hover svg{
+        transform: scale(1.2);
+    }
+
+    .social-icon.facebook svg, .social-icon.twitter svg, .social-icon.linkedin svg{
+        font-size: 18px;
+    }
+}
