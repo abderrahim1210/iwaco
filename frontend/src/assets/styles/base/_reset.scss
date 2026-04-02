@@ -1,0 +1,8 @@
+.form-control:focus,
+.btn:focus
+.form-select:focus,
+.check-input:focus
+{
+    box-shadow: none !important;
+    outline: none !important;
+}

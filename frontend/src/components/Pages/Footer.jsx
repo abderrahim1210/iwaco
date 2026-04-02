@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="footer-grid">
                         <div className="footer-col">
-                            <h2 className="logo">Iwaco</h2>
+                            <h2 className="logo">IWACO</h2>
                             <p>Nous apportons des solutions innovantes pour développer votre activité et des services techniques de haute qualité.</p>
                         </div>
                         <div className="footer-col">
@@ -23,9 +23,9 @@ const Footer = () => {
                         <div className="footer-col">
                             <h4>Contactez-nous</h4>
                             <div className="socials">
-                                <a href=""><FaFacebookF /></a>
-                                <a href=""><FaLinkedinIn /></a>
-                                <a href=""><FaTwitter /></a>
+                                <a href="https://www.facebook.com/iwaco.maroc"><FaFacebookF /></a>
+                                <a href="https://fr.linkedin.com/company/iwaco"><FaLinkedinIn /></a>
+                                <a href="https://twitter.com/iwacomaroc"><FaTwitter /></a>
                             </div>
                         </div>
                     </div>
