@@ -22,11 +22,10 @@
 Ce projet est une solution complète développée pour **IWACO** durant mon stage PFE. Il repose sur une architecture moderne séparant le **Client (React)** du **Serveur (API Laravel)**, garantissant ainsi rapidité et sécurité.
 
 ### ✨ Fonctionnalités clés :
-* **Frontend Réactif :** Interface fluide développée avec React & Bootstrap 5.
-* **API RESTful :** Backend robuste avec Laravel pour la gestion des données.
-* **Authentification :** Sécurisation des accès via Laravel Sanctum / JWT.
-* **Dashboard :** Gestion dynamique du contenu et des services.
-
+* **Frontend Réactif :** Interface fluide et moderne développée avec React & Bootstrap 5.
+* **API RESTful :** Backend robuste avec Laravel pour une gestion efficace des données.
+* **Filtrage Dynamique :** Système de filtrage instantané des produits par catégorie sans rechargement de page.
+* **Formulaire de Contact :** Interface de communication directe avec enregistrement en base de données.
 ---
 
 ## 🏗️ Architecture Technique
