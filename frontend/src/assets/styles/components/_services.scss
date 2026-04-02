@@ -1,0 +1,104 @@
+[data-bs-page='services'] {
+    .services-section-custom {
+        // background-color: #ffffff;
+        background-color: #f8fafc;
+        // padding: 80px 0;
+    }
+
+    .main-service-icon {
+        color: var(--principal_color);
+        animation: pulse 2s infinite;
+    }
+
+    .title-seperator {
+        width: 60px;
+        height: 4px;
+        background: linear-gradient(to right, var(--principal_color), #00d2ff);
+        border-radius: 20px;
+    }
+
+    .iwaco-card {
+        background: #fff;
+        border: 1px solid #f0f0f0;
+        padding: 40px 25px;
+        border-radius: 15px;
+        height: 100%;
+        position: relative;
+        transition: all 0.4s ease;
+        overflow: hidden;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+
+        &:hover {
+            transform: translateY(-10px);
+            // box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03);
+            border-color: transparent;
+            // border-color: rgba(var(--principal_color_rgb), 0.2);
+
+            .icon-wrapper {
+                background: var(--principal_color);
+                color: white;
+                transform: scale(1.1) rotate(5deg);
+            }
+
+            .card-accent {
+                width: 100%;
+            }
+        }
+    }
+
+    .icon-wrapper {
+        width: 60px;
+        height: 60px;
+        background: #f8f9fb;
+        color: var(--principal_color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        border-radius: 12px;
+        font-size: 24px;
+        transition: 0.3s;
+    }
+
+    h4 {
+        font-size: 1.15rem;
+        color: #1a1a1a;
+        z-index: 2;
+        position: relative;
+        font-weight:800;
+    }
+
+    p {
+        z-index: 2;
+        position: relative;
+    }
+
+    .card-accent {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: var(--principal_color);
+        transition: 0.4s ease;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        50% {
+            transform: scale(1.1);
+            opacity: 0.7;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+[data-bs-page="empty_content"] {
+    .empty-content {
+        width: fit-content;
+        padding: 20px;
+        margin: auto !important;
+    }
+
+    .empty-content div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .empty-content h4 {
+        width: 300px;
+        font-weight: 600;
+    }
+
+    .empty-content svg {
+        font-size: 40px;
+    }
+
+    .empty-content .empty-content-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .faIcon {
+        font-size: 40px;
+        cursor: pointer;
+    }
+}
