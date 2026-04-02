@@ -1,13 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Offcanvas from './OffcanvasTemplate'
 import { FaBriefcase, FaEnvelope, FaFacebook, FaFacebookF, FaHome, FaInfoCircle, FaLinkedin, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import { NavLink } from 'react-bootstrap'
 import {Briefcase, Home, Info, Mail} from 'lucide-react'
 
 const Navbar = () => {
+    const [isScrolled,setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50){
+                setIsScrolled(true);
+            }else{
+                setIsScrolled(false);
+            }
+        };
+        window.addEventListener('scroll',handleScroll);
+        return () => window.removeEventListener('scroll',handleScroll);
+    },[]);
     return (
-        <div data-bs-page="navbar">
-            <header className='d-flex d-sm-flex d-md-block'>
+        <div data-bs-page="navbar" className={`sticky-top ${isScrolled ? 'scrolled' : ''}`}>
+            <header className={`d-flex d-sm-flex d-md-block ${isScrolled ? 'isScrolled' : 'noScrolled'}`}>
                 <nav className='navbar navbar-expand p-md-2 p-sm-3 nav1 sticky-top'>
                     <div className="container-fluid d-flex align-items-center justify-content-between">
                         <ul className='navbar-nav me-auto ul1'>
@@ -25,7 +38,7 @@ const Navbar = () => {
                                 <a href='/propos' className='nav-link'><Info /> A propos</a>
                             </li>
                             <li className='nav-item'>
-                                <a href='/services' className='nav-link'><Briefcase /> Services</a>
+                                <a href='#services' className='nav-link'><Briefcase /> Services</a>
                             </li>
                             <li className='nav-item'>
                                 <a href='/contact' className='nav-link'><Mail />Contactez-nous</a>

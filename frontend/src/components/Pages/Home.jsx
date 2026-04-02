@@ -10,6 +10,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
+import ServicesSection from './ServicesSection';
 const Home = () => {
   const navigate = useNavigate();
   const homeTexts = {
@@ -59,6 +60,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <ServicesSection />
       <Footer />
     </div>
   )

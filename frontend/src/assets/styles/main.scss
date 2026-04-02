@@ -1,6 +1,8 @@
 @use './base/reset';
 @use './base/global';
 @use './components/home';
+@use './components/empty_content';
+@use './components/services';
 @use './layouts/navbar';
 @use './layouts/footer';
 
@@ -28,5 +30,5 @@
 body{
     margin: 0;
     font-family: 'Inter','sans-serif';
-    background-color:gray;
+    // background-color:gray;
 }

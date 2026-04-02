@@ -1,13 +1,16 @@
 [data-bs-page="navbar"]{
     .nav1{
         font-weight: bold;
-        background-color: rgba(255,255,255,0.7);
-        backdrop-filter: blur(20px);
         display: flex;
         align-items: center;
         justify-content: center;
         text-decoration: none;
         position: relative;
+    }
+
+    header{
+        background-color: rgba(255,255,255,0.7);
+        backdrop-filter: blur(20px);
     }
 
     .nav1 a{
@@ -67,8 +70,18 @@
         color: var(--principal_color);
     }
 
-    header{
+    .noScrolled{
         background-color: #fff;
+    }
+
+    .isScrolled{
+        background-color: rgba(255,255,255,0.7);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    header{
+        transition: background 0.3s ease;
     }
 
     .social-icon{
