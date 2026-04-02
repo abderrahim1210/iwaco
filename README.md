@@ -1,82 +1,67 @@
-# 📸 Pixora - Modern Image Sharing Platform
+# 🚀 IWACO - Plateforme Web Intégrée (Stage PFE)
 
 <p align="center">
-  <img src="/outils/pngs/" alt="Pixora Logo" width="200" onerror="this.src='https://via.placeholder.com/200?text=Pixora+Logo'"/>
+  <img src="./frontend/public/outils/pngs/logo.png" alt="IWACO Logo" width="200"/>
 </p>
 
 <p align="center">
-  <strong>Modern Image Sharing Platform: Developing a highly responsive and high-performance web interface.</strong>
+  <strong>Projet de Fin d'Études : Développement d'une application Full-stack performante.</strong>
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
   <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
 </p>
 
 ---
 
-## 📝 About the Project
-**Pixora** is a full-stack application dedicated to sharing images and visual content. The goal is to provide users with a fluid and intuitive experience to upload, discover, and manage photos, while ensuring optimal security and execution speed.
+## 📝 À propos du projet
+Ce projet est une solution complète développée pour **IWACO** durant mon stage PFE. Il repose sur une architecture moderne séparant le **Client (React)** du **Serveur (API Laravel)**, garantissant ainsi rapidité et sécurité.
 
-### ✨ Key Features:
-* **Image Management:** Upload, delete, and organize photos with ease.
-* **Reactive Frontend:** Dynamic user interface developed using React.
-* **Security & Auth:** Secure user authentication via Laravel API.
-* **Responsive Design:** Full optimization for mobile, tablet, and desktop devices.
-
----
-
-## 🏗️ Technical Architecture
-- **Frontend:** React.js, Tailwind CSS, Axios.
-- **Backend:** Laravel 10+, RESTful API.
-- **Database:** MySQL.
-- **Authentication:** Laravel Sanctum.
+### ✨ Fonctionnalités clés :
+* **Frontend Réactif :** Interface fluide développée avec React & Bootstrap 5.
+* **API RESTful :** Backend robuste avec Laravel pour la gestion des données.
+* **Authentification :** Sécurisation des accès via Laravel Sanctum / JWT.
+* **Dashboard :** Gestion dynamique du contenu et des services.
 
 ---
 
-## 🚀 Installation and Setup
+## 🏗️ Architecture Technique
+- **Frontend :** React.js, SCSS, Bootstrap 5, Vite.
+- **Backend :** Laravel 10+, PHP 8.1+, REST API.
+- **Base de données :** MySQL.
 
-To clone and run this project locally, follow these steps:
+---
 
-1. **Clone the repository:**
+## 🚀 Installation et Lancement
+
+Pour cloner et lancer ce projet localement, suivez ces étapes :
+
+1.  **Cloner le dépôt :**
     ```bash
-    git clone [https://github.com/abderrahim1210/pixora.git](https://github.com/abderrahim1210/pixora.git)
-    cd pixora
+    git clone [https://github.com/votre-username/iwaco-pfe.git](https://github.com/votre-username/iwaco-pfe.git)
     ```
 
-2. **Install dependencies (Backend):**
+2.  **Installer les dépendances :**
     ```bash
-    composer install
-    cp .env.example .env
-    php artisan key:generate
-    php artisan migrate
-    ```
-
-3. **Install dependencies (Frontend):**
-    ```bash
+    cd iwaco-pfe
     npm install
+    ```
+
+3.  **Lancer le serveur de développement :**
+    ```bash
     npm run dev
     ```
 
 ---
 
-## 👨‍💻 Developer
-* **Name:** Abderrahim
-* **Role:** Full-stack Developer (React / Laravel)
-* **GitHub:** [@abderrahim1210](https://github.com/abderrahim1210)
+## 👨‍💻 Développeur
+* **Nom :** Abderrahim
+* **Rôle :** Stagiaire Développeur Full Stack
+* **Entreprise :** IWACO
 
 ---
-<<<<<<< HEAD
-<p align="center">Pixora Project - Sharing Visual Creativity</p>
-=======
-<<<<<<< HEAD
-<p align="center">Projet IWACO PFE par Abderrahim.</p>
-=======
-<p align="center">Pixora Project - Sharing Visual Creativity</p>
->>>>>>> d357db0 (Jour 2: Ajout des migrations Categories et Contact, configuration des Favicons et mise à jour du style Footer/Navbar)
->>>>>>> 4e56a7f
+<p align="center">Project IWACO PFE réaliser par Abderrahim.</p>
