@@ -1,66 +1,71 @@
-# 🚀 IWACO - Modern Web Interface (Stage PFE)
+# 📸 Pixora - Modern Image Sharing Platform
 
 <p align="center">
-  <img src="./frontend/public/outils/pngs/logo.png" alt="IWACO Logo" width="200"/>
+  <img src="/outils/pngs/" alt="Pixora Logo" width="200" onerror="this.src='https://via.placeholder.com/200?text=Pixora+Logo'"/>
 </p>
 
 <p align="center">
-  <strong>Projet de Fin d'Études : Développement d'une interface web moderne et réactive.</strong>
+  <strong>Modern Image Sharing Platform: Developing a highly responsive and high-performance web interface.</strong>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
-  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
 </p>
 
 ---
 
-## 📝 À propos du projet
-Ce projet a été réalisé dans le cadre de mon **Stage PFE** chez **IWACO**. L'objectif principal est de concevoir une interface utilisateur (UI) moderne, performante et entièrement responsive en utilisant les dernières technologies Web.
+## 📝 About the Project
+**Pixora** is a full-stack application dedicated to sharing images and visual content. The goal is to provide users with a fluid and intuitive experience to upload, discover, and manage photos, while ensuring optimal security and execution speed.
 
-### ✨ Fonctionnalités clés :
-* **Frontend Réactif :** Interface fluide développée avec React & Bootstrap 5.
-* **API RESTful :** Backend robuste avec Laravel pour la gestion des données.
+### ✨ Key Features:
+* **Image Management:** Upload, delete, and organize photos with ease.
+* **Reactive Frontend:** Dynamic user interface developed using React.
+* **Security & Auth:** Secure user authentication via Laravel API.
+* **Responsive Design:** Full optimization for mobile, tablet, and desktop devices.
 
 ---
 
-## 🏗️ Architecture Technique
-- **Frontend :** React.js, SCSS, Bootstrap 5, Vite.
-- **Backend :** Laravel 10+, PHP 8.1+, REST API.
-- **Base de données :** MySQL.
+## 🏗️ Technical Architecture
+- **Frontend:** React.js, Tailwind CSS, Axios.
+- **Backend:** Laravel 10+, RESTful API.
+- **Database:** MySQL.
+- **Authentication:** Laravel Sanctum.
+
 ---
 
-<!-- ## 📸 Aperçu (Screenshots) -->
----
+## 🚀 Installation and Setup
 
-## 🚀 Installation et Lancement
+To clone and run this project locally, follow these steps:
 
-Pour cloner et lancer ce projet localement, suivez ces étapes :
-
-1.  **Cloner le dépôt :**
+1. **Clone the repository:**
     ```bash
-    git clone [https://github.com/abderrahim1210/iwaco.git](https://github.com/abderrahim1210/iwaco.git)
+    git clone [https://github.com/abderrahim1210/pixora.git](https://github.com/abderrahim1210/pixora.git)
+    cd pixora
     ```
 
-2.  **Installer les dépendances :**
+2. **Install dependencies (Backend):**
     ```bash
-    cd iwaco
+    composer install
+    cp .env.example .env
+    php artisan key:generate
+    php artisan migrate
+    ```
+
+3. **Install dependencies (Frontend):**
+    ```bash
     npm install
-    ```
-
-3.  **Lancer le serveur de développement :**
-    ```bash
     npm run dev
     ```
 
 ---
 
-## 👨‍💻 Développeur
-* **Nom :** Abderrahim
-* **Rôle :** Stagiaire Développeur Front-end
-* **Entreprise :** IWACO
+## 👨‍💻 Developer
+* **Name:** Abderrahim
+* **Role:** Full-stack Developer (React / Laravel)
+* **GitHub:** [@abderrahim1210](https://github.com/abderrahim1210)
 
 ---
-<p align="center">Projet IWACO PFE</p>
+<p align="center">Pixora Project - Sharing Visual Creativity</p>

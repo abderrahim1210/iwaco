@@ -39,12 +39,12 @@ const Navbar = () => {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href='' className='nav-link social-icon twitter'>
+                                    <a href='https://twitter.com/iwacomaroc' className='nav-link social-icon twitter'>
                                         <FaTwitter />
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href='' className='nav-link social-icon linkedin'>
+                                    <a href='https://fr.linkedin.com/company/iwaco' className='nav-link social-icon linkedin'>
                                         <FaLinkedinIn />
                                     </a>
                                 </li>
