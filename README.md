@@ -41,7 +41,7 @@ Pour cloner et lancer ce projet localement, suivez ces étapes :
 
 1.  **Cloner le dépôt :**
     ```bash
-    git clone [https://github.com/votre-username/iwaco-pfe.git](https://github.com/votre-username/iwaco-pfe.git)
+    git clone [https://github.com/abderrahim1210/iwaco.git](https://github.com/abderrahim1210/iwaco.git)
     ```
 
 2.  **Installer les dépendances :**
