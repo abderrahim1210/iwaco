@@ -8,7 +8,7 @@ const AboutSection = () => {
                     <div className="about-wrapper">
                         <div className="about-left" data-aos="fade-right">
                             <div className="image-container">
-                                <img src="/outils/backgrounds/iwaco.png" alt="Siége Iwaco Maroc" />
+                                <img src="/outils/backgrounds/iwaco_1.jpg" alt="Siége Iwaco Maroc" />
                                 <div className="experience-box">
                                     <span className="years">20+</span>
                                     <span className="text">Ans d'Expertise <br /> (Depuis 2006)</span>
@@ -39,7 +39,7 @@ const AboutSection = () => {
                                     <p>Réactivité Logistique</p>
                                 </div>
                             </div>
-                            <button className='btn btn-modern'>En savoir plus sur T-MAN Group</button>
+                            <a href='http://tmangroup.ma' className='btn btn-modern'>En savoir plus sur T-MAN Group</a>
                         </div>
                     </div>
                 </div>

@@ -12,6 +12,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import ServicesSection from './ServicesSection';
 import AboutSection from './AboutSection';
+import Heritage from './Heritage';
+import Partners from './Partners';
 const Home = () => {
   const navigate = useNavigate();
   const homeTexts = {
@@ -21,18 +23,6 @@ const Home = () => {
   return (
     <div data-bs-page="home">
       <Navbar />
-      {/* <div className="div2">
-        <div className="container-fluid p-0">
-          <>
-            <h1 className='hero-title' style={{ fontWeight: "700" }}>{homeTexts.heroTitle}</h1>
-            <p id="quote" className="hero-description mt-2 mb-2">
-              {homeTexts.heroDescription}
-            </p>
-            <button className='btn voir-produits'>Voir nos produits <FiArrowRight /></button>
-          </>
-        </div>
-        <br />
-      </div> */}
       <div className="div2">
         <Swiper
           modules={[Autoplay, EffectFade]}
@@ -46,7 +36,13 @@ const Home = () => {
             <div className='slide-img' style={{ backgroundImage: "url('/outils/backgrounds/iwaco.png')" }}></div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='slide-img' style={{ backgroundImage: "url('/outils/backgrounds/b1.jpg')" }}></div>
+            <div className='slide-img' style={{ backgroundImage: "url('/outils/backgrounds/iwaco_1.jpg')" }}></div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='slide-img' style={{ backgroundImage: "url('/outils/backgrounds/iwaco_2.jpg')" }}></div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='slide-img' style={{ backgroundImage: "url('/outils/backgrounds/iwaco_5.jpg')" }}></div>
           </SwiperSlide>
         </Swiper>
         <div className="hero-static-content">
@@ -62,9 +58,13 @@ const Home = () => {
         </div>
       </div>
 
+      <Heritage />
+
+      <AboutSection /> 
+
       <ServicesSection />
 
-      <AboutSection />
+      <Partners />
       <Footer />
     </div>
   )
