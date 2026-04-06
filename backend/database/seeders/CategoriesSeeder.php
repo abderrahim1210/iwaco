@@ -17,27 +17,27 @@ class CategoriesSeeder extends Seeder
 
         $categories = [
             [
-                'nom' => 'Smartphones',
+                'name' => 'Smartphones',
                 'description' => 'Découvrez les derniers smartphones des plus grandes marques mondiales.',
                 'slug' => 'smartphones'
             ],
             [
-                'nom' => 'Accessoires',
+                'name' => 'Accessoires',
                 'description' => 'Large gamme d\'accessoires : chargeurs, écouteurs, et protections.',
                 'slug' => 'accessoires'
             ],
             [
-                'nom' => 'Informatique',
+                'name' => 'Informatique',
                 'description' => 'Laptops, desktops et composants informatiques de haute performance.',
                 'slug' => 'informatique'
             ],
             [
-                'nom' => 'Tablettes',
+                'name' => 'Tablettes',
                 'description' => 'Tablettes polyvalentes pour le travail et le divertissement.',
                 'slug' => 'tablettes'
             ],
             [
-                'nom' => 'Objets Connectés',
+                'name' => 'Objets Connectés',
                 'description' => 'Montres intelligentes et gadgets high-tech pour votre quotidien.',
                 'slug' => 'smart-devices'
             ]
