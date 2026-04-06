@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Partners = () => {
-    const logos = ['samsung.svg','vivo.svg','nokia.svg','huawei.svg','tman.svg','sultan.svg','echo.webp','islahate.webp','wafacash.webp','inwi.webp']
+    const logos = ['vivo.svg','huawei.svg','echo.webp','islahate.webp','wafacash.webp','inwi.webp','remade.png','sbs.png']
   return (
     <div data-bs-page="partners">
         <section className='partners-section'>
