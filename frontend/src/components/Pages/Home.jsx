@@ -14,6 +14,7 @@ import ServicesSection from './ServicesSection';
 import AboutSection from './AboutSection';
 import Heritage from './Heritage';
 import Partners from './Partners';
+import ProductsSection from './ProductsSection';
 const Home = () => {
   const navigate = useNavigate();
   const homeTexts = {
@@ -33,7 +34,7 @@ const Home = () => {
           autoplay={{ delay: 4000, disableOnInteraction: false }}
         >
           <SwiperSlide>
-            <div className='slide-img' style={{ backgroundImage: "url('/outils/backgrounds/iwaco.png')" }}></div>
+            <div className='slide-img' style={{ backgroundImage: "url('/outils/backgrounds/iwaco_6.jpg')" }}></div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='slide-img' style={{ backgroundImage: "url('/outils/backgrounds/iwaco_1.jpg')" }}></div>
@@ -52,7 +53,7 @@ const Home = () => {
               <p id="quote" className="hero-description mt-2 mb-2">
                 {homeTexts.heroDescription}
               </p>
-              <button className='btn voir-produits'>Voir nos produits <FiArrowRight /></button>
+              <a href='#produits' className='btn voir-produits'>Voir nos produits <FiArrowRight /></a>
             </>
           </div>
         </div>
@@ -65,6 +66,8 @@ const Home = () => {
       <ServicesSection />
 
       <Partners />
+
+      <ProductsSection />
       <Footer />
     </div>
   )

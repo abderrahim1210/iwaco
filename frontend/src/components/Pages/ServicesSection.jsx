@@ -26,7 +26,7 @@ const ServicesSection = () => {
     return (
         <section data-bs-page="services" className='container-fluid mt-3 mb-1' id='services'>
             <div className="text-center">
-                <h2 className='fw-bold mt-5'>Nos Services Professionnels</h2>
+                <h2 className='section-title mt-5'>Nos Services Professionnels</h2>
                 <div className="title-separator mx-auto"></div>
             </div>
             <div className="container services-section-custom mb-3">
