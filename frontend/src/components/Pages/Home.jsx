@@ -15,6 +15,7 @@ import AboutSection from './AboutSection';
 import Heritage from './Heritage';
 import Partners from './Partners';
 import ProductsSection from './ProductsSection';
+import ContactFormSection from './ContactFormSection';
 const Home = () => {
   const navigate = useNavigate();
   const homeTexts = {
@@ -68,6 +69,9 @@ const Home = () => {
       <Partners />
 
       <ProductsSection />
+
+      <ContactFormSection />
+
       <Footer />
     </div>
   )
