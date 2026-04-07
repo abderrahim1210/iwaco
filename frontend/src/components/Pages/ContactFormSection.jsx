@@ -56,7 +56,7 @@ const ContactFormSection = () => {
         }
     }
     return (
-        <div data-bs-page="contact" id='contact'>
+        <div data-bs-page="contact" className='container-fluid' id='contact'>
             <h2 className='section-title mt-5'></h2>
             <div className="contact-grid">
                 <div className="container-info-panel">

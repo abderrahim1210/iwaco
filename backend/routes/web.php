@@ -17,3 +17,5 @@ Route::get('/get_categories',function(){
 
 
 Route::post('/send_message',[SendMessage::class, 'sendMessage']);
+
+Route::get('/product/{id}',[ProduitController::class, 'getProduct']);

@@ -1,0 +1,94 @@
+.product-details-wrapper {
+    background-color: #ffffff;
+    min-height: 100vh;
+
+    .detail-logo {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #001a4d;
+        text-decoration: none;
+
+        span {
+            color: var(--principal_color);
+        }
+    }
+
+    .product-page-container {
+        .product-main-title{
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+
+            @media (max-width:768px) {
+                font-size: 1.8rem;
+            }
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: #64748b;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+
+            &:hover {
+                color: var(--principal_color);
+            }
+        }
+
+        .main-product-img-card {
+            background: #f8fafc;
+            padding: 40px;
+            border-radius: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width:768px) {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .main-img{
+                max-height: 450px;
+                object-fit: contain;
+            }
+        }
+
+        .badge-cat {
+            background: rgba(0, 51, 204, 0.1);
+            color: var(--principal_color);
+            padding: 6px 15px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .price-text {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #1e293b;
+
+            small {
+                font-size: 1.2rem;
+                color: #64748b;
+            }
+        }
+
+        .features-grid-mini {
+            display: flex;
+            gap: 20px;
+
+            .feat-item {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 0.9rem;
+                color: #475569;
+                font-weight: 500;
+            }
+        }
+    }
+}

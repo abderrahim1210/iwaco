@@ -5,7 +5,7 @@ const Copyright = () => {
     const year = date.getFullYear();
     return (
         <div>
-            <p>&copy; {year} Tous droits réservés</p>
+            <p>&copy; {year} Tous droits réservés par IWACO</p>
         </div>
     )
 }

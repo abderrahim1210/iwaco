@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaPlus } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const ProductCard = ({ p }) => {
     return (
@@ -8,7 +9,7 @@ const ProductCard = ({ p }) => {
                 <div className='category_badge'>{p.brand || p.category}</div>
                 <img src={`http://localhost:8000/storage/products/${p.category.slug}/${p.image}`} alt={p.name} loading='lazy' />
                 <div className="hover-actions">
-                    <button className='view-btn'>Voir Détails</button>
+                    <Link to={`/product/${p.id}`} className='view-btn'>Voir Détails</Link>
                 </div>
             </div>
 

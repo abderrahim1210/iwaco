@@ -4,11 +4,13 @@ import { ChevronDown, LucidePackage } from 'lucide-react';
 import { FaPlus } from 'react-icons/fa';
 import axios from 'axios';
 import ProductCard from './ProductCard';
+import Spinner from './Spinner';
 const ProductsSection = () => {
     const [products, setProducts] = useState([]);
     const [categories,setCategories] = useState([]);
     const [activeCategory,setActiveCategory] = useState(0);
     const [visible,setVisible] = useState(3);
+    const [loading,setLoading] = useState(true);
 
     const showMoreProducts = () => {
         setVisible(prev => prev + 3);
@@ -20,10 +22,14 @@ const ProductsSection = () => {
             .then(res => {
                 if (res.data.success){
                     setProducts(res.data.produits);
+                    setLoading(false);
+                }else{
+                    setLoading(true);
                 }
             })
         }catch(err){
             console.log(err.response?.data);
+            setLoading(true);
         }
     },[]);
 
@@ -57,13 +63,15 @@ const ProductsSection = () => {
                     ))
                 }
             </div>
-            <section className='products-grid'>
+            {
+                loading ? (<Spinner type='home' />) : (<section className='products-grid'>
                 {
                     filterdProducts?.length > 0 ? filterdProducts.slice(0, visible).map(p => (
                         <ProductCard p={p} key={p.id} />
                     )) : (<EmptyContent icon={<LucidePackage className='faIcon' />} text={"No products found - try again later"} />)
                 }
-            </section>
+            </section>)
+            }
             {
                 visible < filterdProducts.length && (
                     <div className='show-more-wrapper'>

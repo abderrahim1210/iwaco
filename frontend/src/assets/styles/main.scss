@@ -8,8 +8,10 @@
 @use './components/partners';
 @use './components/products';
 @use './components/contact';
+@use './components/product-detaille';
 @use './layouts/navbar';
 @use './layouts/offcanvas';
+@use './components/spinner';
 @use './layouts/footer';
 
 :root{

@@ -15,4 +15,12 @@ class ProduitController extends Controller
             'produits' => $products
         ]);
     }
+
+    public function getProduct($id) {
+        $product = Produit::with(['category'])->where('id',$id)->first();
+        return response()->json([
+            'success' => true,
+            'product' => $product
+        ]);
+    }
 }
