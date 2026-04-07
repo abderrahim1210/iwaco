@@ -3,7 +3,7 @@ import React from 'react'
 const AboutSection = () => {
     return (
         <div data-bs-page="about">
-            <section className='about-section' id='about'>
+            <section className='about-section' id='propos'>
                 <div className="container">
                     <div className="about-wrapper">
                         <div className="about-left" data-aos="fade-right">

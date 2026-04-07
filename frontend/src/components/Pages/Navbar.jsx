@@ -32,10 +32,10 @@ const Navbar = () => {
                         </ul>
                         <ul className='navbar-nav d-none d-md-flex mx-auto ul2'>
                             <li className='nav-item'>
-                                <a href='#home' className='nav-link'><Home /> Accueil</a>
+                                <a href='#' className='nav-link'><Home /> Accueil</a>
                             </li>
                             <li className='nav-item'>
-                                <a href='/propos' className='nav-link'><Info /> A propos</a>
+                                <a href='#propos' className='nav-link'><Info /> A propos</a>
                             </li>
                             <li className='nav-item'>
                                 <a href='#services' className='nav-link'><Briefcase /> Services</a>
