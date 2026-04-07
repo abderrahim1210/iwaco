@@ -32,7 +32,7 @@ const Navbar = () => {
                         </ul>
                         <ul className='navbar-nav d-none d-md-flex mx-auto ul2'>
                             <li className='nav-item'>
-                                <a href='/home' className='nav-link'><Home /> Accueil</a>
+                                <a href='#home' className='nav-link'><Home /> Accueil</a>
                             </li>
                             <li className='nav-item'>
                                 <a href='/propos' className='nav-link'><Info /> A propos</a>
@@ -41,7 +41,7 @@ const Navbar = () => {
                                 <a href='#services' className='nav-link'><Briefcase /> Services</a>
                             </li>
                             <li className='nav-item'>
-                                <a href='/contact' className='nav-link'><Mail />Contactez-nous</a>
+                                <a href='#contact' className='nav-link'><Mail />Contactez-nous</a>
                             </li>
                         </ul>
                         <ul className='navbar-nav d-none d-md-flex flex-column ms-auto'>

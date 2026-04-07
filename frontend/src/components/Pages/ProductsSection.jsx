@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import EmptyContent from './EmptyContent'
-import { LucidePackage } from 'lucide-react';
+import { ChevronDown, LucidePackage } from 'lucide-react';
 import { FaPlus } from 'react-icons/fa';
 import axios from 'axios';
 import ProductCard from './ProductCard';
@@ -8,6 +8,11 @@ const ProductsSection = () => {
     const [products, setProducts] = useState([]);
     const [categories,setCategories] = useState([]);
     const [activeCategory,setActiveCategory] = useState(0);
+    const [visible,setVisible] = useState(3);
+
+    const showMoreProducts = () => {
+        setVisible(prev => prev + 3);
+    }
     useEffect(() => {
         try{
             const url = 'http://localhost:8000/get_all_products';
@@ -21,6 +26,10 @@ const ProductsSection = () => {
             console.log(err.response?.data);
         }
     },[]);
+
+    useEffect(() => {
+        setVisible(3);
+    },[activeCategory])
 
     useEffect(() => {
         try{
@@ -50,11 +59,20 @@ const ProductsSection = () => {
             </div>
             <section className='products-grid'>
                 {
-                    filterdProducts?.length > 0 ? filterdProducts.map(p => (
+                    filterdProducts?.length > 0 ? filterdProducts.slice(0, visible).map(p => (
                         <ProductCard p={p} key={p.id} />
                     )) : (<EmptyContent icon={<LucidePackage className='faIcon' />} text={"No products found - try again later"} />)
                 }
             </section>
+            {
+                visible < filterdProducts.length && (
+                    <div className='show-more-wrapper'>
+                        <button className='btn-show-more' onClick={showMoreProducts}>
+                            Voir plus <ChevronDown size={18} />
+                        </button>
+                    </div>
+                )
+            }
         </div>
     )
 }
