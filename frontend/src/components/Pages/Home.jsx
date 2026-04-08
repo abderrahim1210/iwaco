@@ -16,6 +16,7 @@ import Heritage from './Heritage';
 import Partners from './Partners';
 import ProductsSection from './ProductsSection';
 import ContactFormSection from './ContactFormSection';
+import Motion from '../Animations/Motion';
 const Home = () => {
   const navigate = useNavigate();
   const homeTexts = {
@@ -50,21 +51,29 @@ const Home = () => {
         <div className="hero-static-content">
           <div className="container-fluid p-0">
             <>
-              <h1 className='hero-title' style={{ fontWeight: "700" }}>{homeTexts.heroTitle}</h1>
+              <Motion>
+                <h1 className='hero-title' style={{ fontWeight: "700" }}>{homeTexts.heroTitle}</h1>
               <p id="quote" className="hero-description mt-2 mb-2">
                 {homeTexts.heroDescription}
               </p>
               <a href='#produits' className='btn voir-produits'>Voir nos produits <FiArrowRight /></a>
+              </Motion>
             </>
           </div>
         </div>
       </div>
 
-      <Heritage />
+      <Motion>
+        <Heritage />
+      </Motion>
 
-      <AboutSection /> 
+      <Motion>
+        <AboutSection /> 
+      </Motion>
 
-      <ServicesSection />
+      <Motion>
+        <ServicesSection />
+      </Motion>
 
       <Partners />
 
