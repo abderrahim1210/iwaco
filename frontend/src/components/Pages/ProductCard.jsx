@@ -24,9 +24,9 @@ const ProductCard = ({ p }) => {
                         </span>
                     </div>
 
-                    <button className='add-to-cart-icon' title='Ajouter au panier'>
+                    {/* <button className='add-to-cart-icon' title='Ajouter au panier'>
                         <FaPlus />
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </div>

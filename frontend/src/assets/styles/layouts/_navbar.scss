@@ -1,5 +1,5 @@
-[data-bs-page="navbar"]{
-    .nav1{
+[data-bs-page="navbar"] {
+    .nav1 {
         font-weight: bold;
         display: flex;
         align-items: center;
@@ -8,46 +8,47 @@
         position: relative;
     }
 
-    header{
-        background-color: rgba(255,255,255,0.7);
+    header {
+        background-color: rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(20px);
     }
 
-    .nav1 a{
+    .nav1 a {
         position: relative;
         text-decoration: none;
         padding: 10px 15px;
     }
 
-    .ul1{
+    .ul1 {
         display: flex;
         align-items: center;
     }
 
-    .ul2, .nav-link{
+    .ul2,
+    .nav-link {
         gap: 8px;
     }
 
-    .nav-link{
+    .nav-link {
         display: flex;
         align-items: center;
         align-content: center;
     }
 
-    .nav-link.active{
+    .nav-link.active {
         color: var(--principal_color);
     }
 
-    .ul2 .nav-item{
+    .ul2 .nav-item {
         text-transform: capitalize;
     }
 
-    .ul2 .nav-item .nav-link{
+    .ul2 .nav-item .nav-link {
         position: relative;
 
     }
 
-    .ul2 .nav-item .nav-link::after{
+    .ul2 .nav-item .nav-link::after {
         content: "";
         position: absolute;
         left: 0;
@@ -58,33 +59,34 @@
         transition: 0.3s;
     }
 
-    .ul2 .nav-item .nav-link:hover::after, .ul2 .nav-item .nav-link.active::after{
+    .ul2 .nav-item .nav-link:hover::after,
+    .ul2 .nav-item .nav-link.active::after {
         width: 100%;
     }
 
-    .ul2 .nav-item .nav-link:hover{
+    .ul2 .nav-item .nav-link:hover {
         color: var(--principal_color);
     }
 
-    .ul2 .nav-item .nav-link:focus{
+    .ul2 .nav-item .nav-link:focus {
         color: var(--principal_color);
     }
 
-    .noScrolled{
+    .noScrolled {
         background-color: #fff;
     }
 
-    .isScrolled{
-        background-color: rgba(255,255,255,0.7);
+    .isScrolled {
+        background-color: rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(20px);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
     }
 
-    header{
+    header {
         transition: background 0.3s ease;
     }
 
-    .social-icon{
+    .social-icon {
         width: 35px;
         height: 35px;
         display: flex;
@@ -96,34 +98,61 @@
         transition: 0.3s;
     }
 
-    .social-icon:hover{
+    .social-icon:hover {
         // background-color: var(--principal_color);
         color: white;
         transform: scale(1.1);
     }
 
-    .social-icon.facebook:hover{
+    .social-icon.facebook:hover {
         background-color: #1877f2;
     }
 
-    .social-icon.twitter:hover{
+    .social-icon.twitter:hover {
         background-color: #1da1f2;
     }
 
-    .social-icon.linkedin:hover{
+    .social-icon.linkedin:hover {
         background-color: #0077b5;
     }
 
-    .nav-link svg{
+    .nav-link svg {
         font-size: 8px;
         transition: 0.3s;
     }
 
-    .nav-link:hover svg{
+    .nav-link:hover svg {
         transform: scale(1.2);
     }
 
-    .social-icon.facebook svg, .social-icon.twitter svg, .social-icon.linkedin svg{
+    .social-icon.facebook svg,
+    .social-icon.twitter svg,
+    .social-icon.linkedin svg {
         font-size: 18px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .nav1 {
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+        }
+
+        .ul2 {
+            gap: 2px !important;
+        }
+
+        .nav-link {
+            padding: 8px 5px !important;
+            font-size: 13px !important;
+
+            svg {
+                width: 16px !important;
+                height: 16px !important;
+            }
+        }
+
+        #logo {
+            width: 80px !important;
+        }
     }
 }

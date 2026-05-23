@@ -47,16 +47,19 @@ const Home = () => {
           <SwiperSlide>
             <div className='slide-img' style={{ backgroundImage: "url('/outils/backgrounds/iwaco_5.jpg')" }}></div>
           </SwiperSlide>
+          <SwiperSlide>
+            <div className='slide-img' style={{ backgroundImage: "url('/outils/backgrounds/iwaco_7.jpg')" }}></div>
+          </SwiperSlide>
         </Swiper>
         <div className="hero-static-content">
           <div className="container-fluid p-0">
             <>
               <Motion>
                 <h1 className='hero-title' style={{ fontWeight: "700" }}>{homeTexts.heroTitle}</h1>
-              <p id="quote" className="hero-description mt-2 mb-2">
-                {homeTexts.heroDescription}
-              </p>
-              <a href='#produits' className='btn voir-produits'>Voir nos produits <FiArrowRight /></a>
+                <p id="quote" className="hero-description mt-2 mb-2">
+                  {homeTexts.heroDescription}
+                </p>
+                <a href='#produits' className='btn voir-produits'>Voir nos produits <FiArrowRight /></a>
               </Motion>
             </>
           </div>
@@ -68,7 +71,7 @@ const Home = () => {
       </Motion>
 
       <Motion>
-        <AboutSection /> 
+        <AboutSection />
       </Motion>
 
       <Motion>
